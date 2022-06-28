@@ -1,10 +1,12 @@
 #include <iostream>
 #include <SDL.h>
 
+#include "Renderer.h"
 
 
 int main(int argc, char* args[])
 {
-	SDL_Init(SDL_INIT_EVERYTHING);
+	Renderer engine;
+	engine.init();	
 	return 0;
 }
